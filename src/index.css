@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 203 20% 98%;
+    --foreground: 220 10% 20%; /* Changed from blue to dark gray */
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 20%; /* Changed from blue to dark gray */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 20%; /* Changed from blue to dark gray */
+
+    --primary: 201 95% 41%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 187 47% 55%;
+    --secondary-foreground: 210 40% 98%; /* Changed from blue to almost white for better contrast on secondary bg */
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 15% 45%; /* Changed to a more neutral, slightly darker gray */
+
+    --accent: 199 100% 86%;
+    --accent-foreground: 220 10% 20%; /* Changed from blue to dark gray for better contrast on accent bg */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 201 95% 41%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 205 75% 33%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 201 95% 41%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 205 69% 28%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 205 60% 25%;
+    --sidebar-ring: 201 95% 41%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 201 95% 41%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 187 47% 55%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 199 100% 86%;
+    --accent-foreground: 210 40% 98%; /* For dark mode, accent-foreground should be light if accent is light blue */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 201 95% 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Inter',sans-serif];
+  }
+}
+
+.map-container {
+  height: 400px;
+  width: 100%;
+}
+
+/* MapLibre styles */
+.maplibre-map canvas {
+  border-radius: 0.5rem;
+}
+
+.maplibregl-canvas {
+  border-radius: 0.5rem;
+}
+
+.maplibregl-ctrl-attrib-inner {
+  font-size: 10px;
+}
+
+/* Custom loader */
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #6366f1;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
