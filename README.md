@@ -108,7 +108,7 @@ For testing purposes, you can use these pre-configured accounts:
 - `src/main.tsx`: Application entry point
 
 ## Data Source
-This application connects to JSONPlaceholder as a backend API for demonstration purposes. In a production environment, you would replace these API calls with your own backend services.
+This application connects to JSONPlaceholder as a backend API for demonstration purposes. 
 
 ## Team Contribution 
 - Rhia Mae Gojar - managed authentication system, admin and user dashboard, and deployment
