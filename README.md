@@ -1,5 +1,4 @@
-# UserVerse-Dynamic-WebApp
-# UserVerse - User Management Platform
+# UserVerse-Dynamic-WebApp - User Management Platform
 
 ## Project Description
 UserVerse is a modern, responsive web application that we developed to provide a comprehensive user management platform. The application offers an intuitive interface for managing users and posts, with different access levels for administrators and standard users.
@@ -116,6 +115,6 @@ This application connects to JSONPlaceholder as a backend API for demonstration 
 - Reden Gabitan - focused on the frontend design and UI/UX
 - Ericwin Gonzales - focused on the frontend design and UI/UX.
 
-## Deployement
+## Deployment
 Finally, the live version of UserVerse is deployed here:
 https://userverse-eta.vercel.app/
