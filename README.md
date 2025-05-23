@@ -86,10 +86,6 @@ UserVerse is a modern, responsive web application that we developed to provide a
    ```bash
    npm run dev
    ```
-
-5. **Access the application**
-   Open your browser and navigate to http://localhost:5173 (or the port specified in your terminal).
-
 ## Demo Accounts
 For testing purposes, you can use these pre-configured accounts:
 
@@ -101,15 +97,6 @@ For testing purposes, you can use these pre-configured accounts:
 - Email: Sincere@april.biz
 - Password: Bret
 (Note: This uses the JSON Placeholder API user data)
-
-## Building for Production
-When you're ready to deploy the application:
-
-```bash
-npm run build
-```
-
-This will generate optimized production files in the dist directory.
 
 ## Project Structure
 - `src/components/`: Reusable UI components
@@ -124,10 +111,10 @@ This will generate optimized production files in the dist directory.
 This application connects to JSONPlaceholder as a backend API for demonstration purposes. In a production environment, you would replace these API calls with your own backend services.
 
 ## Team Contribution 
-Rhia Mae Gojar - managed authentication system, admin and user dashboard, and deployment
-Morly Granado - handled the backend APIs 
-Reden Gabitan - focused on the frontend design and UI/UX
-Ericwin Gonzales - focused on the frontend design and UI/UX.
+- Rhia Mae Gojar - managed authentication system, admin and user dashboard, and deployment
+- Morly Granado - handled the backend APIs 
+- Reden Gabitan - focused on the frontend design and UI/UX
+- Ericwin Gonzales - focused on the frontend design and UI/UX.
 
 ## Deployement
 Finally, the live version of UserVerse is deployed here:
